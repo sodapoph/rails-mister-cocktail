@@ -1,0 +1,12 @@
+<div class="container">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card-product my-2">
+      <div class="card-category">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      </div>
+      <div class="card-product-infos">
+        <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+      </div>
+    </div>
+  <% end %>
+</div>
