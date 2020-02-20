@@ -1,0 +1,5 @@
+<div class="container">
+  <% @doses.each do |dose| %>
+    <p><%= link_to dose.description, dose_path(dose) %></p>
+  <% end %>
+</div>

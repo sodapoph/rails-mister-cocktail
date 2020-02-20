@@ -14,6 +14,6 @@ raw_data = open(url).read
 raw_arr = JSON.parse(raw_data)
 ingredients = raw_arr['drinks'].map { |ing| ing['strIngredient1'] }
 
-ingredients.length.times do
-
+ingredients.each do |ingredient|
+  Ingredient.create!(name: ingredient)
 end
