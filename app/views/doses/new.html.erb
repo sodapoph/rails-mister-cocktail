@@ -1,8 +1,10 @@
 <div class="container">
-<h1>New Doses for <%= @cocktail.name %></h1>
-  <%= simple_form_for [@cocktail, @dose] do |f| %>
-    <%= f.association :ingredient, collection: Ingredient.order(:name) %>
-    <%= f.input :description %>
-    <%= f.submit "Add Ingredients", class: "btn btn-primary" %>
-  <% end %>
+  <div class="title my-3">
+  <h2>What would you like to add to <%= @cocktail.name %>?</h2>
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.association :ingredient, collection: Ingredient.order(:name) %>
+      <%= f.input :description %>
+      <%= f.submit "Add Ingredients", class: "btn btn-primary" %>
+    <% end %>
+  </div>
 </div>
