@@ -1,7 +1,8 @@
 <div class="container">
   <% @cocktails.each do |cocktail| %>
     <div class="card-product my-3">
-      <img src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/mojito-cocktails.jpg" />
+      <%= cl_image_tag cocktail.photo.key,
+      width: 400, height: 300, crop: :fill %>
       <div class="card-product-infos">
         <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
       </div>
