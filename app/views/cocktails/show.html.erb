@@ -2,8 +2,10 @@
   <div class="row">
     <div class="col-xs-12 col-sm 6 col-m-3">
       <div class="cocktail-split mt-5">
-        <h2><%= @cocktail.name %></h2>
-        <h4> <%= "Ingredients" %> </h4>
+        <div class="title mb-4">
+          <h2><%= @cocktail.name %></h2>
+          <h4> <%= "Ingredients" %> </h4>
+        </div>
         <div class="dose_name">
           <% @cocktail.doses.each do |dose| %>
             <p> <%= dose.ingredient.name %>
