@@ -1,28 +1,28 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm 6 col-m-3">
-      <div class="cocktail-split mt-5">
-        <div class="title mb-4">
+      <div class="cocktail-split">
+        <div class="show-title mb-4">
           <h2><%= @cocktail.name %></h2>
           <h4> <%= "Ingredients" %> </h4>
         </div>
         <div class="dose_name">
           <% @cocktail.doses.each do |dose| %>
             <p> <%= dose.ingredient.name %>
-                <%= link_to dose_path(dose), method: :delete, data: { confirm: "Delete #{dose.ingredient.name}?" } do %>
-                  <i class="fas fa-trash-alt"></i>
-                  <% end %> </p>
-              <p><%= dose.description %> </p>
-              <% end %>
+              <%= link_to dose_path(dose), method: :delete, data: { confirm: "Delete #{dose.ingredient.name}?" } do %>
+                <i class="fas fa-times"></i>
+              <% end %> </p>
+            <p><%= dose.description %> </p>
+          <% end %>
           <div class="buttons mb-2">
             <%= link_to "Add an Ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
             <%= link_to "Back to List", cocktails_path, class: "btn btn-primary my-2 ml-1" %>
           </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="image-box mt-5">
-    <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
-  </div>
+    <div class="image-box">
+      <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+    </div>
   </div>
 </div>
