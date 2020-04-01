@@ -1,8 +1,33 @@
-.row img {
+.row {
   background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 24px;
+  padding: 30px;
 }
 
-.row img {
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+p {
+  a {
+    color: #f25244;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 12px;
+    vertical-align: top;
+  }
 }
 
+.show-title {
+  h2 {
+    text-align: left;
+    color: #495057;
+  }
+  h4 {
+    color: #495057;
+  }
+  p {
+    color: #495057;
+  }
+}
+
+.buttons {
+  text-align: center;
+}
