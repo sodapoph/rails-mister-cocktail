@@ -1,19 +1,19 @@
 .navbar-lewagon {
-  justify-content: space-between;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+  .navbar-collapse {
+    flex-grow: 0;
+  }
 
-.navbar-lewagon .navbar-brand img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+  .navbar-brand img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
 }
 
 h1 {
   font-family: Knewave;
+  text-align: center;
 }

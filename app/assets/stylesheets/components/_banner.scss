@@ -2,22 +2,30 @@
   background-size: cover;
   background-position: center;
   padding: 150px 0;
-}
-
-.banner h2 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
   text-align: center;
-}
 
-.banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  text-align: center;
-  margin-top: 15px;
+  h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 42px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+
+  }
+
+  p {
+    font-size: 24px;
+    color: white;
+    opacity: .8;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .btn-primary {
+    margin-top: 40px;
+  }
 }

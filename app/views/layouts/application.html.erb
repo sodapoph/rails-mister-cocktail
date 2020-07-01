@@ -16,16 +16,6 @@
       <%= link_to cocktails_path, class: "navbar-brand ml-4" do %>
         <h1> <%= "Cocktails & Soda" %> </h1>
       <% end %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <%= link_to "Create New Cocktail", new_cocktail_path(@cocktail), class: "btn btn-primary mr-4" %>
-          </li>
-        </ul>
-      </div>
     </div>
     <%= yield %>
   </body>
