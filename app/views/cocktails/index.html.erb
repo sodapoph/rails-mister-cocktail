@@ -1,11 +1,11 @@
-<div class="banner" style="background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0)), url(https://static.vinepair.com/wp-content/uploads/2016/11/cocktailsubs-internal-header.jpg);">
+<div class="banner" style="background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0)), url(https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);">
   <div class="container">
     <h2>Care to join the cocktail party?</h2>
-    <%= link_to "Create New Recipe", new_cocktail_path(@cocktail), class: "btn btn-primary mr-4" %>
+    <%= link_to "Create Something New!", new_cocktail_path(@cocktail), class: "btn btn-primary" %>
   </div>
 </div>
-<div class="container">
   <h3>Explore User Favorites</h3>
+
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
       <div class="card-product my-3 ">
@@ -17,4 +17,3 @@
       </div>
     <% end %>
   </div>
-</div>
