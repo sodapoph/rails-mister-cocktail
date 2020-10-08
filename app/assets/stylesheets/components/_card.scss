@@ -1,13 +1,13 @@
 .cards {
+  margin: 20px 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 18px;
 }
 
 .card-product {
   overflow: hidden;
   height: 200px;
-  width: 360px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
@@ -83,5 +83,6 @@
 h3 {
   color: #495057;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
