@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon" id="navbarToggleExternalContent">
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon sticky-top" id="navbarToggleExternalContent">
       <%= link_to cocktails_path, class: "navbar-brand" do %>
         <%= image_tag "Cocktails-Soda.png" %>
       <% end %>
@@ -27,7 +27,7 @@
             <%= link_to "New Cocktail", new_cocktail_path(@cocktail), class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "User Favorites", "#", class: "nav-link" %>
+            <%= link_to "User Favorites", cocktails_path(anchor: "explore"), class: "nav-link" %>
           </li>
         </ul>
       </div>
@@ -37,8 +37,8 @@
     <!-- footer -->
     <div class="footer">
       <div class="footer-links">
-        <a href="https://github.com/sodapoph"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/soraidahenne/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/sodapoph" target="blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/soraidahenne/" target="blank"><i class="fab fa-linkedin"></i></a>
       </div>
       <div class="footer-copyright">
         Made with <i class="fas fa-heart"></i> at Le Wagon Tokyo

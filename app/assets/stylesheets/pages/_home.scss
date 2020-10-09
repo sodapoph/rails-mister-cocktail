@@ -1,1 +1,28 @@
 // Specific CSS for your home-page
+html {
+
+scroll-behavior: smooth;
+}
+
+h3 {
+  color: #495057;
+  text-align: center;
+  margin: 20px 0px;
+  font-weight: lighter;
+}
+
+.explore {
+    margin: 50px 10px;
+  }
+
+.about {
+  background-color: white;
+  padding: 50px;
+
+  p {
+    margin: 25px auto;
+    font-style: italic;
+    color: #969696;
+  }
+}
+

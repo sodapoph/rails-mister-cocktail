@@ -1,11 +1,13 @@
-<div class="banner" style="background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0)), url(https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1574579804640-a15fecaeda35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);">
   <div class="container">
-    <h2>Care to join the cocktail party?</h2>
-    <%= link_to "Create Something New!", new_cocktail_path(@cocktail), class: "btn btn-primary" %>
+    <h2>Care to join us for some cocktails?</h2>
+    <p>Add your favorite cocktails to our listing to share with others!</p>
+    <%= link_to "Get Started", new_cocktail_path(@cocktail), class: "btn btn-primary" %>
   </div>
 </div>
-  <h3>Explore User Favorites</h3>
 
+<div class="explore" id="explore">
+  <h3>Explore User Favorites</h3>
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
       <div class="card-product my-3 ">
@@ -17,3 +19,10 @@
       </div>
     <% end %>
   </div>
+</div>
+
+<div class="about">
+  <h3>About Us</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
